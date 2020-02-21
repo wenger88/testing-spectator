@@ -1,0 +1,28 @@
+{
+  "npmScope": "test1",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "test-app": {
+      "tags": []
+    },
+    "test-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["test-app"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
