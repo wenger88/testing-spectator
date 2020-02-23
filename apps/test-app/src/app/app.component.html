@@ -1,8 +1,15 @@
-<div style="text-align:center">
-  <h1>Welcome to test-app!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+
+<mat-toolbar  color="primary" class="mat-elevation-z6">
+
+  <a mat-button routerLink="/">
+    <span>COURSES</span>
+  </a>
+
+  <a mat-button routerLink="/about">
+    <span>ABOUT</span>
+  </a>
+
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
